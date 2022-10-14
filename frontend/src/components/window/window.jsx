@@ -1,14 +1,16 @@
 import React from "react";
 
 import CodeDictation from "./codeDictation";
-import CodeInput from "./codeInput";
+// import CodeInput from "./codeInput";
+
+import "./window.css"
 
 const Window = (props) => {
   return (
-    <React.Fragment>
+    <div className="window">
       <CodeDictation />
-      <CodeInput />
-    </React.Fragment>
+      <CodeDictation />
+    </div>
   );
 };
 

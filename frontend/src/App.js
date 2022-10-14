@@ -7,9 +7,15 @@ import './App.css';
 const App = () => {
   return (
     <div className="App">
-      <SideBar />
-      <Window />
-      <Terminal />
+      <div className="program">
+        <div className="left-section">
+          <SideBar />
+        </div>
+        <div className="right-section">
+          <Window />
+          <Terminal />
+        </div>
+      </div>
     </div>
   );
 }
