@@ -1,7 +1,14 @@
-import { React, useState } from "react";
+import { React, useState, useEffect } from "react";
 import $ from 'jquery';
 
 const CodeInput = (props) => {
+  useEffect(() => {
+    $(`.tab-window__input0`).focus()
+    console.log($(`.tab-window__input0`))
+    },
+  [])
+
+
   const codeline = [];
   for (let index = 1; index < 30; index++) {
     codeline.push(index);
@@ -53,7 +60,7 @@ const CodeInput = (props) => {
             <div className="tab-window__input">
               {props.codes.map((code, idx) => (
                 <input
-                  className={`tab-window__input${idx}`}
+                  className={`tab-window__input${idx} tab-window__line-input` }
                   type="text"
                   onChange={(event) => inputChangeHandler(event, idx)}
                   onKeyPress={(event) => nextLineHandler(event, idx)}

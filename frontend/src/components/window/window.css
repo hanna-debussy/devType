@@ -92,3 +92,8 @@
   display: block;
   text-align: left;
 }
+
+.tab-window__line-input {
+  opacity:0;
+}
+
