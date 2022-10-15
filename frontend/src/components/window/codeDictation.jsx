@@ -4,21 +4,6 @@ const codeDictation = (props) => {
     codeline.push(index)
   }
 
-  const codes = [
-    "import React, { useState } from 'react';",
-    "",
-    "function Example() {",
-    "const [count, setCount] = useState(0);",
-    "return (",
-    "<div>",
-    "<p>You clicked {count} times</p>",
-    "<button onClick={() => setCount(count + 1)}>",
-    "Click me",
-    "</button>",
-    "</div>",
-    ");",
-    "}"
-  ]
 
   return (
     <div className="code-dictation">
@@ -40,8 +25,8 @@ const codeDictation = (props) => {
               <span className="tab-window__line-num" key={line}>{line}</span>
           ))}
           </div>
-          <div className="tab-window__input">
-            {codes.map((code) => (
+          <div className="tab-window__original">
+            {props.codes.map((code) => (
                 <span className="tab-window__code" key={code}>{code}</span>
             ))}
           </div>

@@ -1,13 +1,8 @@
 .App {
   text-align: center;
-  background-color: #302D2D;
-}
-
-.program {
-  margin: 0 auto;
-  width: 160vh;
+  width: 100vw;
   height: 100vh;
-  background-color: #eef;
+  background-color: #090F21;
   display: flex;
 }
 
