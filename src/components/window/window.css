@@ -1,0 +1,99 @@
+.window {
+  width: 100%;
+  height: 75vh;
+  display: flex;
+}
+
+.code-dictation,
+.code-input {
+  width: 50%;
+  height: 100%;
+}
+
+.tab-bar {
+  margin: 15px 0 10px 0;
+  width: 100%;
+  height: 35px;
+}
+
+.tab-bar__tab {
+  margin: 0 3%;
+  padding: 0 15px;
+  width: 160px;
+  height: 35px;
+  line-height: 35px;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  color: #D8D128;
+  background-color: #0C1326;
+  text-align: left;
+  display: flex;
+}
+
+.tab-bar__tab-name {
+  width: 80%;
+}
+
+.tab-bar__tab-close {
+  width: 20%;
+  text-align: right;
+  color: #ccc;
+  font-weight: 600;
+}
+
+.tab-window {
+  margin: 0 3%;
+  width: 94%;
+  height: calc(100% - 60px);
+  background-color: #1C253E;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tab-window__wrapper {
+  width: calc(100% - 40px);
+  height: calc(100% - 60px);
+  display: flex;
+  overflow: hidden;
+}
+
+.tab-window__line {
+  width: 20px;
+  text-align: right;
+}
+
+.tab-window__line-num {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.tab-window__original {
+  margin-left: 20px;
+  width: calc(100% - 40px);
+}
+
+.tab-window__code {
+  margin-bottom: 5px;
+  width: 400px;
+  display: block;
+  text-align: left;
+}
+
+.tab-window__write {
+  display: flex;
+  flex-direction: column;
+}
+
+.tab-window__input {
+  margin-bottom: 5px;
+  width: 400px;
+  display: block;
+  text-align: left;
+}
+
+.tab-window__line-input {
+  opacity:0;
+}
+

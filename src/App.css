@@ -1,0 +1,22 @@
+.App {
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #090F21;
+  display: flex;
+}
+
+.left-section {
+  width: calc(18% - 1px);
+  height: 100%;
+  background-color: #090F21;
+  border-right: 1px solid #6C6C6C;
+}
+
+.right-section {
+  width: 82%;
+  height: 100%;
+  background-color: #090F21;
+  display: flex;
+  flex-direction: column;
+}
